@@ -22,12 +22,27 @@
                 <a href="#reviews" class="nav-link">Отзывы</a>
             </div>
             <div class="nav-icons">
-                <a href="#"><i class='bx bx-user'></i></a>
+                <a href="#"><i class='bx bx-user' id="userRegister"></i></a>
                 <a href="#"><i class='bx bx-shopping-bag'></i></a>
                 <div class="menu-icons">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <h2>Авторизация</h2>
+                    <form action="#" class="form">
+                        <label for="email">Почта:</label>
+                        <input type="email" placeholder="Почта" required>
+                        <label for="password">Пароль:</label>
+                        <input type="password" placeholder="Пароль" required>
+                        <label for="password">Потдвердить Пароль:</label>
+                        <input type="password" placeholder="Потдвердите пароль" required>
+                        <button type="submit">Отправить</button>
+                        <button class="close-btn" id="closeModal">&times</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -218,7 +233,7 @@
                 <form action="book">
                     <div class="input-box">
                         <i class='bx bx-phone-call'></i>
-                        <input type="tel" name="" placeholder="Телефон" id="" min="0" max="13">
+                        <input type="tel" name="" placeholder="Телефон" id="phon1" min="0" max="13">
                     </div>
                     <div class="input-box">
                         <i class='bx bx-user'></i>
@@ -262,7 +277,7 @@
     <p class="copyright">&#169; QCAFE </p>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/scripts/index.js"></script>
+    <script type="module" src="/scripts/index.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,13 @@
-import imgSrc from '../images/hero.png';
-
-const img = document.createElement('img');
-img.src = imgSrc;
-document.body.appendChild(img);
+const closeModal = document.getElementById('closeModal')
+closeModal.addEventListener('click', () => {
+  modal.classList.remove('modal-show')
+})
+const modal = document.querySelector('.modal')
+const userRegister = document.getElementById('userRegister')
+userRegister.addEventListener('click', function(event) {
+  event.preventDefault
+  modal.classList.add('modal-show')
+})
 
 
 const menu = document.querySelector('.menu-icons')
